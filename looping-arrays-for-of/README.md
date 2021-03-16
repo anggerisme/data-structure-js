@@ -1,4 +1,4 @@
-# Looping arrays - for of
+# Looping arrays - `for of`
 
 `for of` pada prinsipnya bekerja dengan cara yang sama dengan perulangan for biasa
 
@@ -46,3 +46,13 @@ for (const item of menu.entries()) {
 ```
 
 > Dari perulangan didapatkan hasil berupa semua nilai dari `menu` yang disimpan di dalam variable `item` kemudian disini kita akan memanfaatkan `key` dan `value` yang dihasilkan dan men-_destructuringnya_ . Jadi nilai `item[0]` menunjukkan `key` dan `item[1]` menunjukkan `value`
+
+Berarti kita juga bisa ubah variablenya untuk masing-masing order tanpa perlu lagi menyertakan nomer indexnya untuk membaca nilai yang ada di dalamnya :
+
+```javascript
+for (const [a, b] of menu.entries()) {
+  console.log(`${a + 1}, ${b}`);
+}
+```
+
+> `a` mewakili nilai item[0] : `key` dan `b` mewakili nilai `item[1]` yang merupakan `value`. Inilah keuntungan kita jika menggunakan _destructuring assignment_.

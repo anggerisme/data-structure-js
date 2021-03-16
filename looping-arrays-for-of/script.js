@@ -43,3 +43,7 @@ console.log([...menu.entries()]); // ... spread operator dan kurung besar []
 for (const item of menu.entries()) {
   console.log(`${item[0] + 1}, ${item[2]}`);
 }
+/* Mengganti order dengan nama variablel */
+for (const [a, b] of menu.entries()) {
+  console.log(`${a + 1}, ${b}`);
+}
