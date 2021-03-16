@@ -39,6 +39,8 @@ console.log([...menu.entries()]);
 
 ### Destructuring hasil dari method `entries()`
 
+Perlu diketahui mengapa kita bisa melakukan _destructuring_ karena nilai yang dikembalikan oleh method `entries()` berupa `arrays` juga. Sehingga kita bisa memanfaatkanya untuk melakukan _destructuring_ nanti.
+
 ```javascript
 for (const item of menu.entries()) {
   console.log(`${item[0] + 1}, ${item[1]}`);
