@@ -26,7 +26,19 @@ const rumahMakan = {
 };
 
 const menu = [...rumahMakan.makanan];
-console.log(menu);
+// console.log(menu);
 
 // For of
 for (const item of menu) console.log(item);
+
+// Mengetahui nomer index dari setiap perulangan
+for (const item of menu.entries()) {
+  console.log(item);
+}
+// menggabungkanya dalam satu array
+console.log([...menu.entries()]); // ... spread operator dan kurung besar []
+
+// Destructuring hasil dari method entries()
+for (const item of menu.entries()) {
+  console.log(`${item[0] + 1}, ${item[1]}`);
+}
