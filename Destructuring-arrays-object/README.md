@@ -370,3 +370,64 @@ Hasilnya :
 ```javascript
 Pesanan diterima! es buah dan gulai siap diantarkan ke alamat Jalan merpati, 30 pukul 20:00
 ```
+
+## Tips syntax object literal
+
+### Penulisan object di dalam object
+
+Sebelum ES6 jika kita ingin menyertakan sebuah objek dari luar ke dalam objek yang lain maka yang perlu dilakukan adalah menuliskan nama property dan valuenya sama persis.
+
+```javascript
+const jamBuka = {
+  kam: {
+    open: 12,
+    close: 22,
+  },
+};
+const rumahMakan = {
+  jamBuka: jamBuka, // Penulisan property dan value sama persis
+};
+```
+
+> Masih disertakan dalam property
+
+```javascript
+const jamBuka = {
+  kam: {
+    open: 12,
+    close: 22,
+  },
+};
+const rumahMakan = {
+  jamBuka, // Penulisan property dan value sama persis
+};
+```
+
+> Cukup menuliskan nama objek yang akan dimasukkan
+
+### Penulisan function
+
+#### Cara lama
+
+```javascript
+const rumahMakan = {
+  order: function (minumanIndex, makananIndex) {
+    // masih menuliskn function
+    return [this.minuman[minumanIndex], this.makanan[makananIndex]];
+  },
+};
+```
+
+> Penulisan cara lama masih menyertakan `function` untuk mendefinisikan bahwa dia adalah `function`
+
+#### Cara baru
+
+```javascript
+const rumahMakan = {
+  order(minumanIndex, makananIndex) {
+    return [this.minuman[minumanIndex], this.makanan[makananIndex]];
+  },
+};
+```
+
+> Penulisan cara baru cukup hanya menuliskan **_nama propertynya saja_**, tetapi bisa kita lihat bahwa ciri dari sebuah function adalah tanda `()` yang masih dipertahankan disana, karena dengan itu sudah menunjukkan ciri dari sebuah function

@@ -145,3 +145,28 @@ const {
   jum: { open: buka, close: tutup },
 } = jamBuka;
 console.log(buka, tutup);
+
+// ----- TIPS SYNTAX OBJECT LITERAL -----
+/* Syntax lama sebelum es6 */
+const jamBuka = {
+  kam: {
+    open: 12,
+    close: 22,
+  },
+};
+const rumahMakan = {
+  jamBuka: jamBuka, // Penulisan property dan value sama persis
+};
+
+console.log(rumahMakan.jamBuka);
+/* Syntax es6 */
+
+const jamBuka = {
+  kam: {
+    open: 12,
+    close: 22,
+  },
+};
+const rumahMakan = {
+  jamBuka, // Penulisan cukup ditulis nama objek yang akan dimasukkan
+};
