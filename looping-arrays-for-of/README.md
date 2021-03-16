@@ -24,3 +24,11 @@ for (const item of menu.entries()) {
 ```
 
 > function/method `entries` mengembalikan `key` dan `value`, Contoh : [1, "gulai ikan"] 1 merupakan `key` dan gulai ikan sebagai `value`
+
+### menggabungkanya dalam satu array
+
+```javascript
+console.log([...menu.entries()]);
+```
+
+> Jika kita ingin menggabungkan semua nilai yang dihasilkan dalam satu `array`maka kita harus gunakan ... spread operator (untuk mengeluarkan semua nilai) dan kurung besar [] (untuk mengelompokanya dalam satu `array`)
