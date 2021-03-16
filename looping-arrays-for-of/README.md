@@ -17,6 +17,8 @@ Di dalam perulangan tersebut `item` (variable yang kita buat untuk menampung nil
 
 ### Mengetahui nomer index dari setiap perulangan
 
+Ingat! variable `menu` sudah kita deklarasikan diatas yang menampung nilai dari seluruh nilai `rumahMakan.makanan`
+
 ```javascript
 for (const item of menu.entries()) {
   console.log(item);
@@ -25,6 +27,8 @@ for (const item of menu.entries()) {
 
 > function/method `entries` mengembalikan `key` dan `value`, Contoh : [1, "gulai ikan"] 1 merupakan `key` dan gulai ikan sebagai `value`
 
+Penggunaan method `entries()` hanya untuk menampilkan `key` dan `value` dari suatu `array`
+
 ### menggabungkanya dalam satu array
 
 ```javascript
@@ -32,3 +36,13 @@ console.log([...menu.entries()]);
 ```
 
 > Jika kita ingin menggabungkan semua nilai yang dihasilkan dalam satu `array`maka kita harus gunakan ... spread operator (untuk mengeluarkan semua nilai) dan kurung besar [] (untuk mengelompokanya dalam satu `array`)
+
+### Destructuring hasil dari method `entries()`
+
+```javascript
+for (const item of menu.entries()) {
+  console.log(`${item[0] + 1}, ${item[1]}`);
+}
+```
+
+> Dari perulangan didapatkan hasil berupa semua nilai dari `menu` yang disimpan di dalam variable `item` kemudian disini kita akan memanfaatkan `key` dan `value` yang dihasilkan dan men-_destructuringnya_ . Jadi nilai `item[0]` menunjukkan `key` dan `item[1]` menunjukkan `value`
