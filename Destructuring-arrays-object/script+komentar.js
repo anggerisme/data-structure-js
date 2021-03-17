@@ -147,6 +147,7 @@ const {
 console.log(buka, tutup);
 
 // ----- TIPS SYNTAX OBJECT LITERAL -----
+/* ----- Object ----- */
 /* Syntax lama sebelum es6 */
 const jamBuka = {
   kam: {
@@ -170,3 +171,21 @@ const jamBuka = {
 const rumahMakan = {
   jamBuka, // Penulisan cukup ditulis nama objek yang akan dimasukkan
 };
+
+/* ----- function -----*/
+/* Cara lama */
+const rumahMakan = {
+  order: function (minumanIndex, makananIndex) {
+    // masih menuliskn function
+    return [this.minuman[minumanIndex], this.makanan[makananIndex]];
+  },
+};
+
+/* Cara baru */
+const rumahMakan = {
+  order(minumanIndex, makananIndex) {
+    return [this.minuman[minumanIndex], this.makanan[makananIndex]];
+  },
+};
+
+// -----
