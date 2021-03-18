@@ -1,4 +1,6 @@
-const daftarMenu = Set(["Soto", "Sate", "Nasi Goreng", "Sate", "Soto"]);
+/////////////////// Set ////////////////////
+
+const daftarMenu = new Set(["Soto", "Sate", "Nasi Goreng", "Sate", "Soto"]);
 
 console.log(daftarMenu);
 /* CASE SENSITIVE */
@@ -32,3 +34,50 @@ console.log(posisi); // Menghasilkan object
 /* Mengubahnya menjadi nilai array */
 const posisi1 = [...new Set(daftarPegawai)];
 console.log(posisi1);
+
+/////////////////// Map ////////////////////
+console.log("-------- Map ----------");
+/* map.set(key, value) */
+const warung = new Map();
+warung.set("nama", "rumah makan barokah");
+warung.set(1, "warteg", "tradisional");
+console.log(warung.set(2, "bekasi", "jabar"));
+warung
+  .set("makanan", ["soto", "gulai ikan", "rendang"])
+  .set("buka", 11)
+  .set("tutup", 22)
+  .set(true, "Warung buka")
+  .set(false, "Warung tutup");
+
+// ----- Map Method() yang lain-----
+/* ---1. map.get(key)--- */
+console.log(warung.get("nama"));
+console.log(warung.get(true));
+console.log(warung.get(1));
+
+/* ---2. map.delete--- */
+// console.log(warung.delete("nama"));
+/* ---3. map.has(key)--- */
+console.log(warung.has("nama")); // true
+/* ---4. map.size--- */
+console.log(warung.size); //8
+/* ---5. map.clear()--- */
+// console.log(warung.clear());
+
+/* ----- Menggunakan arrays sebagai Key ---- */
+warung.set([1, 2], "Ini array");
+console.log(warung);
+
+console.log(warung.get([1, 2])); // Undefined
+
+/* Solusi */
+const arr = [1, 2];
+warung.set(arr, "Ini array");
+console.log(warung.get(arr));
+
+/*  Penerapan map lebih jauh*/
+
+const pukul = 21;
+console.log(
+  warung.get(pukul > warung.get("buka") && pukul < warung.get("tutup"))
+);
