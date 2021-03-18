@@ -45,16 +45,19 @@ for (const day of properties) {
 }
 console.log(bukaStr);
 
+console.log("----- Object.value -----");
 // ----- Object.value -----
 /* Mengembalikan nilai dari suatu property dalam object */
 const values = Object.values(rumahMakan.jamBuka);
 console.log(values);
 
+console.log("----- Object.entries -----");
 // ----- Object entries -----
 /* Mengembalikan key dan values*/
 const entries = Object.entries(rumahMakan.jamBuka);
 console.log(entries);
 /* Destructuring Objek entries */
+console.log("-----x-----");
 for (const x of entries) {
   console.log(x);
 }
