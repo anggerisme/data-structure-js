@@ -38,7 +38,7 @@ console.log(avr);
 
 ## Print odds
 
-Menampilkan nilai yang ada di `game.odd`. Unt
+Menampilkan nilai yang ada di `game.odd`.
 
 ```javascript
 for (const [team, odd] of Object.entries(game.odds)) console.log(team, odd);
