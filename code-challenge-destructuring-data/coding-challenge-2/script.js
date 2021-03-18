@@ -66,7 +66,6 @@ console.log(avr);
 /* ////////////////////////////////// */
 // // ----- Print odds -----
 for (const [team, odd] of Object.entries(game.odds)) {
-  //   console.log(team, odd);
   const teamStr = team === `x` ? "draw" : `victory ${game[team]}`;
   console.log(`Odd of ${teamStr} ${odd}`);
 }
