@@ -13,3 +13,5 @@ console.log(mapJamBuka);
 ![Console log!](map%20iteration/img/carbon.png) "Hasil console")
 
 ![Console log!](/data-structure-js/map%20iteration/img/carbon.png) "Hasil console")
+
+![Console log!](https://github.com/anggerisme/data-structure-js/blob/main/map%20iteration/img/carbon.png) "Hasil console")
