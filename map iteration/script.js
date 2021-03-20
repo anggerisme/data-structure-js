@@ -57,3 +57,9 @@ console.log(besFisika.get("Pertanyaan"));
 for (const [key, value] of besFisika) {
   if (typeof key === "number") console.log(`${key} satuan ${value}`);
 }
+
+// Boolean untuk memanggil Key
+const jawaban = Number(prompt("Masukkan jawaban"));
+console.log(jawaban);
+
+console.log(besFisika.get(besFisika.get("correct") === jawaban));
