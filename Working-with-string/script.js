@@ -76,3 +76,16 @@ const trimmedEmail = normalizeEmail.trim(); // trim() Remove unused white space
 /* Penulisan singkat */
 const trimmedEmail1 = loginEmail.toLowerCase().trim(); // Digabungkan
 console.log(email === trimmedEmail1);
+
+// ---- Replacing -----
+/* Mengganti spesifik value dengan value lain  */
+const priceGP = "288,93 £";
+const priceUS = priceGP.replace("£", "$");
+console.log(priceUS);
+/* Replace() hanya mengganti/replace value pertama tidak semua value ikut berubah*/
+const announcement =
+  "All passengers come to boarding door 23. Boarding door 23";
+console.log(announcement.replace("door", "gate")); // hanya door urutan pertama yg berubah
+console.log(announcement.replaceAll("door", "gate")); // merubah semua value
+// Regular ekspression : melakukan pemeriksaan terhadap suatu data/substring dlm suatu string. Merupakan istilah yang digunakan sebagai metode pencarian yang dikodekan
+console.log(announcement.replace(/door/g, "gate")); // Cari kata 'door' dan ganti dengan gate
