@@ -50,3 +50,18 @@ console.log(typeof new String("Angger")); // {'angger} -> Object
 
 /* Setelah proses ini selesei javascript akan mengembalikanya sebagai string primitive lagi. Semua method string mengembalikan nilai primitive. Bahkan jika memanggil ketika itu adalah string object */
 console.log(typeof new String("Angger").slice()); // string
+
+// ////////////// Working with string part 2 //////////////
+
+/* Mengubah semua huruf menjadi huruf kecil (lower) */
+console.log(kata.toLowerCase());
+/* Mengubah semua huruf menjadi huruf Besar (Upper) */
+console.log(kata.toUpperCase());
+
+// ----- Contoh -----
+/* Mengubah kalimat yang susunan katanya berantakan menjadi rapi */
+const kataSalah = "KaLiMaT";
+/* Mengubah semuanya ke huruf kecil terlebih dahulu */
+const kataLower = kataSalah.toLowerCase();
+const kataBenar = kataLower[0].toUpperCase() + kataLower.slice(1);
+console.log(kataBenar);
