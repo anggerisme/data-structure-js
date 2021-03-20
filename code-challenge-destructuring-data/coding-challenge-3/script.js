@@ -72,3 +72,9 @@ console.log(
 // Remove the yellow card at 64
 console.log(gameEvents.delete(64));
 console.log(gameEvents);
+
+// Marking the events whether the first half or second
+for (const [min, events] of gameEvents) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`${half} HALF ${min} : ${events}`);
+}
