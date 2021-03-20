@@ -63,3 +63,8 @@ console.log(newSet);
 for (const [key, value] of gameEvents) {
   console.log([key, value]);
 }
+
+// Count the average of events
+console.log(
+  `An event happened, on average, every ${90 / gameEvents.size} minutes`
+);
