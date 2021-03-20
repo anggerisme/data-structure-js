@@ -39,6 +39,7 @@ const besFisika = new Map([
   [1, "Massa : kilogram"],
   [2, " Waktu : sekon"],
   [3, "Kuat arus listrik : ampere"],
+  [4, "Suhu : Kelvin"],
   ["correct", 3],
   [true, "Intensitas cahaya : candela"],
   [false, "Jumlah zat : mol"],
@@ -56,8 +57,3 @@ console.log(besFisika.get("Pertanyaan"));
 for (const [key, value] of besFisika) {
   if (typeof key === "number") console.log(`${key} satuan ${value}`);
 }
-
-const jawaban = Number(prompt("Masukkan jawaban"));
-console.log(jawaban);
-
-console.log(besFisika.get(besFisika.get("correct") === jawaban));

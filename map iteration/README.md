@@ -25,21 +25,3 @@ for (const [key, value] of besFisika) {
   if (typeof key === "number") console.log(`${key} satuan ${value}`);
 }
 ```
-
-## Nilai boolean untuk memanggil Key
-
-Seperti yang sudah kita pelajari sebelumnya kita dapat menghasilkan nilai `boolean` dari suatu kondisi yang akan memanggil Key yang bernilai `boolean`.
-Pertama-tama kita akan membuat kotak dialog `prompt()` untuk menerima masukkan yang akan menentukan apakah `correct` === 3. Ini tergantung dari apa yang user masukkan
-
-```javascript
-const jawaban = Number(prompt("Masukkan jawaban"));
-console.log(jawaban);
-```
-
-> `Number` digunakan untuk mengkonversi apapun yang dimasukkan user menjadi number/angka. selain itu akan bernilai `NaN`
-
-Kemudian input diatas akan menentukan apakah Key `correct` bernilai `3` atau tidak. Jika bernilai `3` (_true_) maka Key yang bertipe boolean `true` akan ditampilkan, sedangkan jika tidak sama dengan `3` (_false_) akan ditampilkan Key yang bertipe boolean `false`
-
-```javascript
-console.log(besFisika.get(besFisika.get("correct") === jawaban));
-```
