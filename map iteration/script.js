@@ -34,13 +34,14 @@ const rumahMakan = {
 };
 
 const besFisika = new Map([
-  ["Panjang", "meter"],
-  ["Massa", "kilogram"],
-  ["Waktu", "sekon"],
-  ["Kuat arus listrik", "ampere"],
-  ["Suhu", "kelvin"],
-  ["Intensitas cahaya", "candela"],
-  ["Jumlah zat", "mol"],
+  ["Pertanyaan", "Sebutkan contoh besaran pokok fisika"],
+  [("Panjang", "meter")],
+  [1, "Massa : kilogram"],
+  [2, " Waktu : sekon"],
+  [3, "Kuat arus listrik : ampere"],
+  ["correct", 3],
+  [true, "Intensitas cahaya : candela"],
+  [false, "Jumlah zat : mol"],
 ]);
 
 console.log(besFisika);
@@ -49,3 +50,14 @@ console.log(besFisika);
 console.log(Object.entries(rumahMakan.jamBuka));
 const mapJamBuka = new Map(Object.entries(rumahMakan.jamBuka));
 console.log(mapJamBuka);
+
+// Looping over Map
+console.log(besFisika.get("Pertanyaan"));
+for (const [key, value] of besFisika) {
+  if (typeof key === "number") console.log(`${key} satuan ${value}`);
+}
+
+const jawaban = Number(prompt("Masukkan jawaban"));
+console.log(jawaban);
+
+console.log(besFisika.get(besFisika.get("correct") === jawaban));
