@@ -65,3 +65,14 @@ const kataSalah = "KaLiMaT";
 const kataLower = kataSalah.toLowerCase();
 const kataBenar = kataLower[0].toUpperCase() + kataLower.slice(1);
 console.log(kataBenar);
+
+/* ----- Trim ----- */
+const email = "kontak@angger.me";
+const loginEmail = "  Kontak@Angger.me "; // Penulisan salah
+
+/* Penulisan normal */
+const normalizeEmail = loginEmail.toLowerCase();
+const trimmedEmail = normalizeEmail.trim(); // trim() Remove unused white space
+/* Penulisan singkat */
+const trimmedEmail1 = loginEmail.toLowerCase().trim(); // Digabungkan
+console.log(email === trimmedEmail1);
