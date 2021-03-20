@@ -1,9 +1,12 @@
+// ////////////// Working with string part 1 //////////////
+
 const kata = "ini adalah kalimAt";
 console.log(kata.length);
 
 // ----- Method indexOf() -----
+// Zero Base -> perhitunga dari 0
 /* IndexOf -> Menampilkan indek array yang pertama */
-console.log(kata.indexOf("a")); //5
+console.log(kata.indexOf("k")); //5
 /* Jika tidak ditemukan akan menampilkan -1 */
 console.log(kata.indexOf("KalimAt"));
 
@@ -20,3 +23,9 @@ console.log(kata.slice(4, 10));
 console.log(kata.slice(0, kata.indexOf(" ")));
 /* memotong spasi dari spasi paling terakhir +1 untuk menambah karakter setelah spasi ("")  */
 console.log(kata.slice(kata.lastIndexOf(" ") + 1));
+/* Memulai perpotongan dari urutan paling terakhir ke arah yang berlawanan  <-- */
+console.log(kata.slice(-1)); // Menampilkan nilai paling akhir
+console.log(kata.slice(-7));
+/*
+ */
+console.log(kata.slice(1, -1));
