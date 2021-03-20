@@ -10,8 +10,8 @@ const mapJamBuka = new Map(Object.entries(rumahMakan.jamBuka));
 console.log(mapJamBuka);
 ```
 
-Dibawah ini merupakan hasil `console.log` yang memiliki struktur arrays [`key`, `value`] yang sama dengan Map `besFisika`
+Dibawah ini merupakan hasil `console.log` yang memiliki struktur arrays [`key`, `value`] yang sama dengan Map `besFisika` <br>
 ![Console log!](https://github.com/anggerisme/data-structure-js/blob/main/map%20iteration/img/carbon.png)
 
-Struktur Map `besFisika` :
+Struktur Map `besFisika` : <br>
 ![Console log!](https://github.com/anggerisme/data-structure-js/blob/main/map%20iteration/img/carbon1.png)
