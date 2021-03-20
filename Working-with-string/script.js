@@ -29,3 +29,16 @@ console.log(kata.slice(-7));
 /*
  */
 console.log(kata.slice(1, -1));
+
+// ----- Penerapan pada contoh kasus -----
+
+const checkMiddleSeat = function (seat) {
+  // menentukan nilai s nanti dihitung dari nilai paling akhir
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("You got the middle seat 😃");
+  else console.log("You got lucky 😎");
+};
+
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("31E");
