@@ -89,3 +89,10 @@ console.log(announcement.replace("door", "gate")); // hanya door urutan pertama 
 console.log(announcement.replaceAll("door", "gate")); // merubah semua value
 // Regular ekspression : melakukan pemeriksaan terhadap suatu data/substring dlm suatu string. Merupakan istilah yang digunakan sebagai metode pencarian yang dikodekan
 console.log(announcement.replace(/door/g, "gate")); // Cari kata 'door' dan ganti dengan gate
+
+// ----- Boolean -----
+/* Mengecheck dan akan mengembalikan nilai boolean */
+const cekKata = "Ceklah kata ini";
+console.log(cekKata.includes("kata")); // true
+console.log(cekKata.includes("katakan")); // false
+console.log(cekKata.startsWith("Cek")); // true -> tidak harus semua huruf, cukup diwakili beberapa huruf saja awalanya
