@@ -59,7 +59,10 @@ for (const [key, value] of besFisika) {
 }
 
 // Boolean untuk memanggil Key
-const jawaban = Number(prompt("Masukkan jawaban"));
-console.log(jawaban);
+// const jawaban = Number(prompt("Masukkan jawaban"));
+// console.log(jawaban);
 
-console.log(besFisika.get(besFisika.get("correct") === jawaban));
+// console.log(besFisika.get(besFisika.get("correct") === jawaban));
+
+// Convert Map to array
+console.log([...besFisika]);

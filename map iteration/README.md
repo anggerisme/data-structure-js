@@ -45,3 +45,11 @@ console.log(besFisika.get(besFisika.get("correct") === jawaban));
 ```
 
 > besFisika.get() akan mendapatkan nilainya dari hasil konfirmasi apakah `Key` `correct` === jawaban. `jawaban` ini jika di isi 3 maka true dan sebaliknya.
+
+## Mengubah Map menjadi array
+
+Mudah saja kita tinggal tambahkan `[]` dan untuk menampilkan semua isinya cukup tambahkan `spread operator`
+
+```javascript
+console.log([...besFisika]);
+```
