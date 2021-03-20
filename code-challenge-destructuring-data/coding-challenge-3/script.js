@@ -58,3 +58,8 @@ const gameEvents = new Map([
 // Count the events itself
 const newSet = new Set(gameEvents.values());
 console.log(newSet);
+
+// Create arrays of gameEvents (all)
+for (const [key, value] of gameEvents) {
+  console.log([key, value]);
+}
