@@ -68,3 +68,7 @@ for (const [key, value] of gameEvents) {
 console.log(
   `An event happened, on average, every ${90 / gameEvents.size} minutes`
 );
+
+// Remove the yellow card at 64
+console.log(gameEvents.delete(64));
+console.log(gameEvents);
