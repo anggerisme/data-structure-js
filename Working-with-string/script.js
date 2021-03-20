@@ -26,8 +26,6 @@ console.log(kata.slice(kata.lastIndexOf(" ") + 1));
 /* Memulai perpotongan dari urutan paling terakhir ke arah yang berlawanan  <-- */
 console.log(kata.slice(-1)); // Menampilkan nilai paling akhir
 console.log(kata.slice(-7));
-/*
- */
 console.log(kata.slice(1, -1));
 
 // ----- Penerapan pada contoh kasus -----
@@ -96,3 +94,15 @@ const cekKata = "Ceklah kata ini";
 console.log(cekKata.includes("kata")); // true
 console.log(cekKata.includes("katakan")); // false
 console.log(cekKata.startsWith("Cek")); // true -> tidak harus semua huruf, cukup diwakili beberapa huruf saja awalanya
+
+// ----- Practice Exercise -----
+/* Memeriksa apakah suatu string memuat substring/kata tertentu */
+const cekTas = function (barang) {
+  const tas = barang;
+  if (tas.includes("pisau" || "makanan"))
+    console.log("Anda dilarang masuk kabin! ❌");
+  else console.log("Anda dipersilahkan masuk ✅");
+};
+
+cekTas("Saya membawa pisau dan buku");
+cekTas("Saya membawa handphone dan laptop");
