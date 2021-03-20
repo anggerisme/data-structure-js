@@ -10,4 +10,6 @@ const mapJamBuka = new Map(Object.entries(rumahMakan.jamBuka));
 console.log(mapJamBuka);
 ```
 
-![Console log!](https://github.com/anggerisme/data-structure-js/blob/main/data-structure-js/map%20iteration/img/carbon.png) "Hasil console")
+![Console log!](map%20iteration/img/carbon.png) "Hasil console")
+
+![Console log!](/data-structure-js/map%20iteration/img/carbon.png) "Hasil console")
