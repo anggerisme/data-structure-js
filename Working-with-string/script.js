@@ -42,3 +42,11 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat("11B");
 checkMiddleSeat("23C");
 checkMiddleSeat("31E");
+
+// ----- Catatan -----
+/* Kita tahu bahwa string adalah primitive tetapi mengapa jadi mengapa string mempunyai method? Bukankah methods hanya ada di object seperti arrays? Ya itu benar! Saat kita memanggil method di dalam string Javascript di belakang layar akan mengubah string primitive menjadi string object dengan content yang sama dan darisanalah penyebabnya string bisa mempunyai method. Proses ini di namakan Boxing yang berarti mengambil string dan lalu menempatkanya sebagai objects*/
+
+console.log(typeof new String("Angger")); // {'angger} -> Object
+
+/* Setelah proses ini selesei javascript akan mengembalikanya sebagai string primitive lagi. Semua method string mengembalikan nilai primitive. Bahkan jika memanggil ketika itu adalah string object */
+console.log(typeof new String("Angger").slice()); // string
